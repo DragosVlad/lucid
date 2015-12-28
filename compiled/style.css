@@ -354,12 +354,121 @@ th {
   padding: 0; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 *, *::before, *::after {
   box-sizing: inherit; }
 
 body {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-  font-size: 16;
-  font-weight: 400; }
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
+
+header, section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+header {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+.accent-text {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #008ed6;
+  letter-spacing: 2.5px; }
+
+.header-main {
+  text-align: center;
+  width: 45%;
+  margin: 80px auto 0; }
+
+.lead-text {
+  text-align: center;
+  margin: 0 auto; }
+
+.title--main {
+  font-size: 4em;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #fff; }
+
+.text-details {
+  font-size: 1.5em;
+  color: #999999; }
+
+.cta {
+  margin-top: 80px; }
+
+form {
+  border: 1px solid red;
+  display: flex; }
+
+.input {
+  background-color: transparent;
+  outline: none;
+  padding: 15px;
+  font-size: 19px;
+  color: #fff;
+  border: 1px solid rgba(224, 224, 224, 0.2);
+  flex-basis: 60%; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-nav {
+  list-style: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 16pt;
+  flex-basis: 45%;
+  display: flex;
+  justify-content: space-between; }
+
+.nav-item {
+  display: inline-block; }
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px; }
+
+.active {
+  position: relative; }
+
+.active:before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  width: 32px;
+  left: 7px;
+  border-bottom: 3px solid #008ed6; }
+
+.active:after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  width: 32px;
+  right: 7px;
+  border-bottom: 3px solid #008ed6; }

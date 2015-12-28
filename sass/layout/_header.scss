@@ -1,0 +1,44 @@
+.header-main {
+	text-align: center;
+	width: 45%;
+	margin: 80px auto 0;
+}
+
+	.lead-text {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.title--main {
+		font-size: 4em;
+		font-weight: $font-semibold;
+		margin: 10px 0;
+		color: $text-color-white;
+	}
+
+	.text-details {
+		font-size: 1.5em;
+		color: $text-color-grey;
+	}
+
+	.cta {
+		margin-top: 80px;
+		// border: 1px solid red;
+	}
+
+		form {
+			border: 1px solid red;
+			display: flex;
+		}
+		
+		.input {
+			background-color: transparent;
+			outline: none;
+			padding: 15px;
+			font-size: 19px;
+			color: $text-color-white;
+			border: 1px solid rgba($color-stroke, 0.2);
+			flex-basis: 60%;
+		}
+
+		

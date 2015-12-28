@@ -1,7 +1,44 @@
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 } 
+
+body {
+  font-family: $font-family-sans;
+  font-size: $font-base-size;
+  font-weight: $font-regular;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header, section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.accent-text {
+		font-family: $font-family-sans;
+		font-weight: $font-bold;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		color: $color-accent;
+		letter-spacing: 2.5px;
+	}
