@@ -1,0 +1,42 @@
+.features-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+	.feature-box {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		&:hover .icon--features {
+			background-color: $color-accent;
+			color: $text-color-white;
+			border: 3px solid darken($color-accent, 10%);
+		}
+	}
+
+		.features-title {
+			font-weight: $font-regular;
+			font-size: 2em;
+			color: $text-color-black;
+		}
+
+		.features-text {
+			font-size: 1.5em;
+			color: $text-color-grey;
+		}
+
+		.icon--features {
+			width: 90px;
+			height: 90px;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			border-radius: 100%;
+			font-size: 2.5em;
+			color: $color-accent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.4s ease-in-out;
+		}

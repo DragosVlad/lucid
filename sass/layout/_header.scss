@@ -5,7 +5,9 @@
 }
 
 	.lead-text {
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		margin: 0 auto;
 	}
 
@@ -23,14 +25,15 @@
 
 	.cta {
 		margin-top: 80px;
-		// border: 1px solid red;
 	}
 
 		form {
-			border: 1px solid red;
+			width: 85%;
+			margin: 0 auto;
 			display: flex;
+			justify-content: space-between;
 		}
-		
+
 		.input {
 			background-color: transparent;
 			outline: none;
@@ -38,7 +41,13 @@
 			font-size: 19px;
 			color: $text-color-white;
 			border: 1px solid rgba($color-stroke, 0.2);
-			flex-basis: 60%;
+			flex: 1;
+			margin-right: 10px;
+
+			&:hover, &:focus, &:active {
+				outline: none;
+			}
 		}
+
 
 		

@@ -5,6 +5,7 @@
 	<title>Lucid</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
 				</div>
 
 				<ul class="main-nav">
-					<li class="nav-item active"><a href="#">Home</a></li>
+					<li class="nav-item "><a href="#" class="active">Home</a></li>
 					<li class="nav-item"><a href="#">Features</a></li>
 					<li class="nav-item"><a href="#">About</a></li>
 					<li class="nav-item"><a href="#">Testimonials</a></li>
@@ -74,35 +75,35 @@
 
 		<div class="wrapper">
 
-			<div class="title-group">
+			<div class="title-group"> <!-- Flexbox container -->
 
 				<p class="accent-text">Product overview</p>
-				<h1 class="title">List of amazing features</h1>
+				<h1 class="title">List&nbsp;of&nbsp;amazing&nbsp;features</h1>
 				<div class="title-separator"></div>
 
 			</div>
 
 			<div class="features-list"> <!-- Flexbox container -->
 				<div class="feature-box">
-					<div class="icon features-icon"><i class="fa"></i></div>
+					<div class="icon icon--features"><i class="fa fa-desktop"></i></div>
 					<h2 class="features-title">Responsive</h2>
 					<p class="features-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
 				</div>
 
 				<div class="feature-box">
-					<div class="icon features-icon"><i class="fa"></i></div>
+					<div class="icon icon--features"><i class="fa fa-cog"></i></div>
 					<h2 class="features-title">Customizable</h2>
 					<p class="features-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
 				</div>
 
 				<div class="feature-box">
-					<div class="icon features-icon"><i class="fa"></i></div>
+					<div class="icon icon--features"><i class="fa fa-thumbs-o-up"></i></div>
 					<h2 class="features-title">Lovely Design</h2>
 					<p class="features-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
 				</div>
 
 				<div class="feature-box">
-					<div class="icon features-icon"><i class="fa"></i></div>
+					<div class="icon icon--features"><i class="fa fa-mobile"></i></div>
 					<h2 class="features-title">Mobile Friendly</h2>
 					<p class="features-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
 				</div>
@@ -125,27 +126,31 @@
 			<div class="container"> <!-- Flexbox container -->
 
 				<div class="devices">
-					<img src="" alt="Devices">
+					<img src="images/devices.png" alt="Devices">
 				</div>
 
 				<div class="details-text">
 					
-					<div class="title-group">
-						<p class="accent-text accent-text--left">Dip into the details</p>
+					<div class="title-group title-group--left">
+						<p class="accent-text">Dip into the details</p>
 						<h1 class="title">Beautiful on every device</h1>
-						<div class="title-separator title-separator--left"></div>
+						<div class="title-separator"></div>
 					</div>
 
 					<p class="text-details">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
+					
 
 					<ul class="details-list">
-						<li><i class="fa"></i>Awesome design</li>
-						<li><i class="fa"></i>Fully responsive</li>
-						<li><i class="fa"></i>Retina ready</li>
-						<li><i class="fa"></i>Tons of features and easy to use</li>
+						<li><i class="fa fa-bluetooth-b icon"></i> Awesome design</li>
+						<li><i class="fa fa-mobile icon"></i> Fully responsive</li>
+						<li><i class="fa fa-bolt icon"></i> Retina ready</li>
+						<li><i class="fa fa-arrows-v icon"></i> Tons of features and easy to use</li>
 					</ul>
+					
 
 				</div>
+
+
 
 				
 
@@ -169,17 +174,17 @@
 			<div class="container"> <!-- Flexbox container -->
 
 				<div class="details-text">
-					<div class="title-group">
-						<p class="accent-text accent-text--left">Dip into the details</p>
+					<div class="title-group title-group--left">
+						<p class="accent-text">Dip into the details</p>
 						<h1 class="title">Super easy to customize</h1>
-						<div class="title-separator title-separator--left"></div>
+						<div class="title-separator"></div>
 					</div>
 
 					<p class="text-details">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 				</div>
 
 				<div class="devices">
-					<img src="" alt="Devices">
+					<img src="images/devices2.png" alt="Devices">
 				</div>
 
 			</div> <!-- End flexbox container -->
@@ -200,7 +205,7 @@
 
 			<div class="title-group">
 				<p class="accent-text">Quality has its price</p>
-				<h1 class="title">Pricings &amp; Plans</h1>
+				<h1 class="title title--white">Pricings &amp; Plans</h1>
 				<div class="title-separator"></div>
 			</div>
 
@@ -241,7 +246,7 @@
 
 					<p class="text-details">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</p>
 
-					<div class="btn btn--empty">Order now</div>
+					<div class="btn btn--empty"><a href="#">Order now</a></div>
 				</div>
 
 
@@ -256,7 +261,7 @@
 
 					<p class="text-details">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</p>
 					
-					<div class="btn btn--empty">Order now</div>
+					<div class="btn btn--empty"><a href="#">Order now</a></div>
 				</div>
 
 
@@ -271,7 +276,7 @@
 
 					<p class="text-details">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</p>
 					
-					<div class="btn btn--empty">Order now</div>
+					<div class="btn btn--empty"><a href="#">Order now</a></div>
 				</div>
 
 
@@ -286,7 +291,7 @@
 
 					<p class="text-details">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</p>
 					
-					<div class="btn btn--empty">Order now</div>
+					<div class="btn btn--empty"><a href="#">Order now</a></div>
 				</div>
 
 			</div> <!-- End flex container -->

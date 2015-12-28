@@ -371,7 +371,7 @@ body {
 
 header, section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 header {
@@ -389,7 +389,44 @@ header {
   font-size: 1.2em;
   text-transform: uppercase;
   color: #008ed6;
-  letter-spacing: 2.5px; }
+  letter-spacing: 2.5px;
+  margin-bottom: 0; }
+
+.title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 80px; }
+
+.title {
+  font-size: 3em;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 10px; }
+
+.title-separator {
+  position: relative;
+  width: 50px; }
+  .title-separator:before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    left: 0;
+    border-bottom: 3px solid #008ed6; }
+  .title-separator:after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    right: 0;
+    border-bottom: 3px solid #008ed6; }
+
+.container {
+  display: flex;
+  justify-content: space-around; }
+
+.title-group--left {
+  align-items: flex-start;
+  margin-bottom: 40px; }
 
 .header-main {
   text-align: center;
@@ -397,7 +434,9 @@ header {
   margin: 80px auto 0; }
 
 .lead-text {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto; }
 
 .title--main {
@@ -414,8 +453,10 @@ header {
   margin-top: 80px; }
 
 form {
-  border: 1px solid red;
-  display: flex; }
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
 
 .input {
   background-color: transparent;
@@ -424,7 +465,72 @@ form {
   font-size: 19px;
   color: #fff;
   border: 1px solid rgba(224, 224, 224, 0.2);
-  flex-basis: 60%; }
+  flex: 1;
+  margin-right: 10px; }
+  .input:hover, .input:focus, .input:active {
+    outline: none; }
+
+.features-list {
+  display: flex;
+  justify-content: space-around; }
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .feature-box:hover .icon--features {
+    background-color: #008ed6;
+    color: #fff;
+    border: 3px solid #006ca3; }
+
+.features-title {
+  font-weight: 400;
+  font-size: 2em;
+  color: #1a1a1a; }
+
+.features-text {
+  font-size: 1.5em;
+  color: #999999; }
+
+.icon--features {
+  width: 90px;
+  height: 90px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  font-size: 2.5em;
+  color: #008ed6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out; }
+
+.details-text {
+  width: 50%; }
+
+.details-list {
+  list-style: none;
+  font-size: 1.5em;
+  margin-top: 40px;
+  padding-left: 0;
+  color: #1a1a1a; }
+
+.icon {
+  color: #008ed6;
+  margin-right: 10px; }
+
+.details-list li {
+  margin-bottom: 15px; }
+
+.pricing {
+  background-image: url("../images/testimonials-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.title--white {
+  color: #fff; }
 
 .top {
   display: flex;
@@ -452,7 +558,14 @@ form {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 15px; }
+  padding: 15px;
+  transition: all 0.4s ease-in-out; }
+  .nav-item a:hover {
+    color: #70cfff; }
+    .nav-item a:hover:before {
+      left: 12px; }
+    .nav-item a:hover:after {
+      right: 12px; }
 
 .active {
   position: relative; }
@@ -463,7 +576,8 @@ form {
   bottom: -2px;
   width: 32px;
   left: 7px;
-  border-bottom: 3px solid #008ed6; }
+  border-bottom: 3px solid #008ed6;
+  transition: all 0.3s ease-in-out; }
 
 .active:after {
   position: absolute;
@@ -471,4 +585,29 @@ form {
   bottom: -2px;
   width: 32px;
   right: 7px;
-  border-bottom: 3px solid #008ed6; }
+  border-bottom: 3px solid #008ed6;
+  transition: all 0.3s ease-in-out; }
+
+.btn {
+  width: 200px;
+  background-color: #fff;
+  color: #008ed6;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  outline: none; }
+  .btn:hover, .btn:focus, .btn:active {
+    outline: none; }
+
+.btn--primary {
+  background-color: #008ed6;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+  .btn--primary:hover {
+    background-color: #007dbd;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); }

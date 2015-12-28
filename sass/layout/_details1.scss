@@ -1,0 +1,20 @@
+.details-text {
+	width: 50%;
+}
+
+.details-list {
+	list-style: none;
+	font-size: 1.5em;
+	margin-top: 40px;
+	padding-left: 0;
+	color: $text-color-black;
+}
+
+	.icon {
+		color: $color-accent;
+		margin-right: 10px;
+	}
+
+	.details-list li {
+		margin-bottom: 15px;
+	}
